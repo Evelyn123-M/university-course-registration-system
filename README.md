@@ -63,9 +63,17 @@ A university keeps its academic information manually, which makes it hard to man
  ![create table part2 and foreign keys]
  <img width="950" height="497" alt="create_tables_part2_fks" src="https://github.com/user-attachments/assets/90c4c44f-fb78-427e-9909-016f8ae927a0" />
 
- <img width="825" height="305" alt="registration_fks" src="https://github.com/user-attachments/assets/b1b0ab55-474f-4719-a6c6-e49845bcb4ab" />
+**Table in PostgreSQL (pgAdmin):**
+<img width="921" height="268" alt="tables_in_pgadmin" src="https://github.com/user-attachments/assets/5c2233b5-0f66-44e9-9dea-4c3c7f502054" />
+ **Join table lecturer_course (foreign keys):**
+ <img width="772" height="322" alt="lecturer_course_fks" src="https://github.com/user-attachments/assets/0529c22f-ca0e-46cf-9125-db246afba2a6" />
+ **Join entity registration (columns and foreign keys):**
+ 
 
-<img width="772" height="322" alt="lecturer_course_fks" src="https://github.com/user-attachments/assets/becf72e3-4718-4cc8-b0ac-d073a8a70275" />
+<img width="801" height="383" alt="registration_columns" src="https://github.com/user-attachments/assets/7c610b8c-e829-43be-b908-51b427d5d336" />
+<img width="825" height="305" alt="registration_fks" src="https://github.com/user-attachments/assets/cb0c6a23-2267-4030-8c08-93f29d67d584" />
+
+
 
 
 
