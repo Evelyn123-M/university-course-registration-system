@@ -1,1 +1,68 @@
-# university-course-registration-system
+# University Course Registration and Academic Management System
+Course: Web Technology and Internet
+Name: Mutuyimana Evelyne
+Id: 27701
+Stack: Java, Spring Boot, Spring Data JPA / hibernate, postgreSQL, maven
+Database: University_academic_db
+Scope: Model and Repository layers
+
+## 1. Problem Analysis
+A university keeps its academic information manually, which makes it hard to manage student,courses, lectures and registration. this project designs the database and implements it with Spring Boot and Hibernate, so the data is stored in organized tables.
+
+## 2. Entities and Attributes
+| Entity| Attributes| why it exists|
+|---|---|---|
+| Department | id, name, code | Groups courses, lecturers and students, and has one head|
+| Student | id, fullname, registrationNumber | a student is admitted into one department |
+| Studentprofile | id, dataOfBirth, gender, phoneNumber, residentialAddreess| Each student has exactly one profile |
+| Lecturer | id, fullName, email | works in a department and teaches courses |
+| Courses | id, registrationDate, academicYear, semester, status, drage | Records a student's registration for a course |
+
+## Relationships and cardinality
+ |Relationship | cardinality | implementation |
+ |---|---|---|
+ | Department - Course | One-to-Many | FK department_id in course |
+ | Department - Lecturer |One-to-Many | FK department_id in lecturer |
+ | Department - Student | One-to-Many | FK department_id in student |
+ | Department - Head (Lecturer) | One-to-One | FK head_id in department |
+ | Student - StudentProfile | One-to-One | FK student_id (unique) in student_profile |
+ | Lecturer - Course | Many-to-Many | Join table lecturer_course |
+ | Student - Course | Many-to-Many | join entity Registration |
+
+ **Foreign keys:** needed for all One-to-Mnay and One-to-One relationships.
+
+ **Join table:** Lecturer - Course uses the join tbale `lecturer course`. A lecturer teaches many courses and a course has many lecturers. No eectra data is stored, so no entity is needed.
+
+ **Join entity:** Student - Course uses the entity `Registration`. Each registration also stores date, academic year, semester, status (PENDING, APPROVED, REJECTED) and grade, so it must be an entity.
+
+ ## 4. ERD
+ ![ERD]() 
+
+ ## 5. Reional Schema
+ - department(**id** PK, name, code, head_id FK to lecturer)
+ - lecturer(**id** PK, full_name, email, department_id FK to department)
+ - course(**id** PK, code, title, credits, department_id FK to department)
+ - lecturer_course(**lecturer_id** FK, **course_id** FK, PK on both)
+ - student(**id**PK, full_name, registration_number, department FK to department)
+ - student_profile(**id** PK, date_of_birth, gender,phone_number,residential_address, student_id FK to student, unique)
+ - registration(**id** PK, student_id FK to student, course_id FK to course, registration_date, academic_year, semester, status, grade)
+
+   ## 6. How to Run
+
+   1. create the database: `CREATE DATABASE university_academic_db;`
+   2. open `scr/main/resources/application.properties` and putu your postgreSQL password.
+   3. Run `./mvnw spring-boot:run`
+   4. hibernate creates the 7 tables automatically.
+
+   ## 7. 
+ 
+
+
+
+
+
+
+
+
+
+
