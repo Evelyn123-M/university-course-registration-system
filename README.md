@@ -70,6 +70,7 @@ A university keeps its academic information manually, which makes it hard to man
 
 **Table in PostgreSQL (pgAdmin):**
 <img width="921" height="268" alt="tables_in_pgadmin" src="https://github.com/user-attachments/assets/5c2233b5-0f66-44e9-9dea-4c3c7f502054" />
+
  **Join table lecturer_course (foreign keys):**
  <img width="772" height="322" alt="lecturer_course_fks" src="https://github.com/user-attachments/assets/0529c22f-ca0e-46cf-9125-db246afba2a6" />
  **Join entity registration (columns and foreign keys):**
