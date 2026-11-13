@@ -1,10 +1,10 @@
 # University Course Registration and Academic Management System
-Course: Web Technology and Internet
-Name: Mutuyimana Evelyne
-Id: 27701
-Stack: Java, Spring Boot, Spring Data JPA / hibernate, postgreSQL, maven
-Database: University_academic_db
-Scope: Model and Repository layers
+**Course:** Web Technology and Internet
+**Name:** Mutuyimana Evelyne
+**Id:** 27701
+**Stack:** Java, Spring Boot, Spring Data JPA / hibernate, postgreSQL, maven
+**Database:** University_academic_db
+**Scope:** Model and Repository layers
 
 ## 1. Problem Analysis
 A university keeps its academic information manually, which makes it hard to manage student,courses, lectures and registration. this project designs the database and implements it with Spring Boot and Hibernate, so the data is stored in organized tables.
