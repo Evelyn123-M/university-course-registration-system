@@ -36,7 +36,9 @@ A university keeps its academic information manually, which makes it hard to man
  **Join entity:** Student - Course uses the entity `Registration`. Each registration also stores date, academic year, semester, status (PENDING, APPROVED, REJECTED) and grade, so it must be an entity.
 
  ## 4. ERD
- ![ERD]() 
+ ![ERD]()
+ <img width="807" height="597" alt="ERD" src="https://github.com/user-attachments/assets/f33422a5-ed1b-48f4-bf84-1cc7a2cfeff2" />
+
 
  ## 5. Reional Schema
  - department(**id** PK, name, code, head_id FK to lecturer)
