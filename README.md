@@ -56,8 +56,23 @@ A university keeps its academic information manually, which makes it hard to man
    3. Run `./mvnw spring-boot:run`
    4. hibernate creates the 7 tables automatically.
 
-   ## 7. 
+   ## 7. Screenshots
+**Table Creation (console):**
+![create tables part 1]
+<img width="951" height="372" alt="create_tables_part1" src="https://github.com/user-attachments/assets/ad7732c0-ba29-4e62-bb8f-46eaca5c8d3b" />
+ ![create table part2 and foreign keys]
+ <img width="950" height="497" alt="create_tables_part2_fks" src="https://github.com/user-attachments/assets/90c4c44f-fb78-427e-9909-016f8ae927a0" />
+
+ <img width="825" height="305" alt="registration_fks" src="https://github.com/user-attachments/assets/b1b0ab55-474f-4719-a6c6-e49845bcb4ab" />
+
+<img width="772" height="322" alt="lecturer_course_fks" src="https://github.com/user-attachments/assets/becf72e3-4718-4cc8-b0ac-d073a8a70275" />
+
+
+
+
+
  
+
 
 
 
