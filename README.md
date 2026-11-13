@@ -1,9 +1,14 @@
 # University Course Registration and Academic Management System
 **Course:** Web Technology and Internet
+
 **Name:** Mutuyimana Evelyne
+
 **Id:** 27701
+
 **Stack:** Java, Spring Boot, Spring Data JPA / hibernate, postgreSQL, maven
+
 **Database:** University_academic_db
+
 **Scope:** Model and Repository layers
 
 ## 1. Problem Analysis
