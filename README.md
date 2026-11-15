@@ -5,26 +5,26 @@
 
 **Id:** 27701
 
-**Stack:** Java, Spring Boot, Spring Data JPA / hibernate, PostgreSQL, Maven
+**Stack:** Java, Spring Boot, Spring Data JPA / Hibernate, PostgreSQL, Maven
 
 **Database:** university_academic_db
 
 **Scope:** Model and Repository layers
 
 ## 1. Problem Analysis
-A university keeps its academic information manually, which makes it hard to manage students,courses, lecturers and registrations. This project designs the database and implements it with Spring Boot and Hibernate, so the data is stored in organized tables.
+A university keeps its academic information manually, which makes it hard to manage students, courses, lecturers and registrations. This project designs the database and implements it with Spring Boot and Hibernate, so the data is stored in organized tables.
 
 ## 2. Entities and Attributes
 | Entity| Attributes| why it exists|
 |---|---|---|
 | Department | id, name, code | Groups courses, lecturers and students, and has one head|
-| Student | id, fullname, registrationNumber | a student is admitted into one department |
+| Student | id, fullName, registrationNumber | a student is admitted into one department |
 | StudentProfile | id, dateOfBirth, gender, phoneNumber, residentialAddress| Each student has exactly one profile |
-| Lecturer | id, fullname, email | works in a department and teaches courses |
-| Courses| id, code, tltle, credits | Belong to one department |
-| Registration | id, registrationDate, academicYear, semester, status, drage | Records a student's registration for a course |
+| Lecturer | id, fullName, email | works in a department and teaches courses |
+| Course| id, code, title, credits | Belongs to one department |
+| Registration | id, registrationDate, academicYear, semester, status, grade | Records a student's registration for a course |
 
-## Relationships and Cardinality
+## 3. Relationships and Cardinality
  |Relationship | cardinality | implementation |
  |---|---|---|
  | Department - Course | One-to-Many | FK department_id in course |
@@ -46,7 +46,7 @@ A university keeps its academic information manually, which makes it hard to man
  <img width="807" height="597" alt="ERD" src="https://github.com/user-attachments/assets/f33422a5-ed1b-48f4-bf84-1cc7a2cfeff2" />
 
 
- ## 5. Reional Schema
+ ## 5. Retional Schema
  - department(**id** PK, name, code, head_id FK to lecturer)
  - lecturer(**id** PK, full_name, email, department_id FK to department)
  - course(**id** PK, code, title, credits, department_id FK to department)
@@ -57,8 +57,8 @@ A university keeps its academic information manually, which makes it hard to man
 
    ## 6. How to Run
 
-   1. create the database: `CREATE DATABASE university_academic_db;`
-   2. open `src/main/resources/application.properties` and put your postgreSQL password.
+   1. Create the database: `CREATE DATABASE university_academic_db;`
+   2. open `src/main/resources/application.properties` and put your PostgreSQL password.
    3. Run `./mvnw spring-boot:run`
    4. Hibernate creates the 7 tables automatically.
 
